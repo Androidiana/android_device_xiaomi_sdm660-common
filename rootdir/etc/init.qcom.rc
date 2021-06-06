@@ -220,6 +220,9 @@ on boot
     # Create hvdcp_opti directory
     mkdir /mnt/vendor/persist/hvdcp_opti 0770 root system
 
+    # Start qcrild
+    start vendor.qcrild
+
     #sensors log dir
     mkdir /data/vendor/sensors
     chown system system /data/vendor/sensors
